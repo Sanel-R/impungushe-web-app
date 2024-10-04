@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Impungushe Careers Web Application
+
+A web application using Next.js, shadcn/ui and tailwind as our styling option.
 
 ## Getting Started
 
