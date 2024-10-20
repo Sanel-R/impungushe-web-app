@@ -1,5 +1,5 @@
 // =====================================================Enums============================================================
-enum PROVINCE 
+export enum PROVINCE 
 {
     EASTERN_CAPE,
     FREE_STATE,
@@ -12,7 +12,7 @@ enum PROVINCE
     WESTERN_CAPE,
 }
 
-enum BusinessType 
+export enum BusinessType 
 {
     SoleProprietorShip,
     Partnership,
@@ -21,28 +21,28 @@ enum BusinessType
     Cooperative,
 }
 
-enum NumberOfEmployees 
+export enum NumberOfEmployees 
 {
     Small,
     Medium,
     High,
 }
 
-enum Gender 
+export enum Gender 
 {
     Female,
     Male,
     Other,
 }
 
-enum EmploymentType 
+export enum EmploymentType 
 {
     FullTime,
     PartTime,
     Contract,
 }
 
-enum SalaryRange 
+export enum SalaryRange 
 {
     EntryLevel,
     MidLevel,
@@ -52,7 +52,7 @@ enum SalaryRange
     Executive,
 }
 
-enum Status 
+export enum Status 
 {
     Submitted,
     UnderReview,
@@ -213,3 +213,18 @@ export type VehicleOwnerDTO =
     is_taken: boolean,
 }
 // =====================================================Data transfer object=============================================
+
+// =====================================================Utility expressions==============================================
+export const phoneRegex = new RegExp(
+    /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
+);
+
+export const passwordRegex = new RegExp(
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+);
+
+export const urlRegex = new RegExp(
+    /^((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?$)/
+);
+
+// =====================================================Utility expressions==============================================
